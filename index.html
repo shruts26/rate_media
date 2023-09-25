@@ -7,23 +7,27 @@
 </head>
 <body>
   <main>
+   
     <video width="320" height="240" controls>
       <source src ="video.mp4" type="video/mp4">
     </video> 
 
-  <div>
     <form>
-      <label for="rating"></label>
-      <input list="range" id="rating" name="rating" min='1' max="5">
-      <datalist id="rating">
-        <option value="1"></option>
+      <div>
+      <label for="rating">Rating</label>
+      <input type="range" id="rating" name="rating" min='1' max="5" list="ratings">
+      <datalist id="ratings">
+        <option value="1" label="1"></option>
         <option value="2"></option>
         <option value="3"></option>
         <option value="4"></option>
-        <option value="5"></option>
+        <option value="5" label="5"></option>
       </datalist>
+      </div>
     </form>
-  </div>
+
+    <button type="submit">Submit Button</button>
+  
   </main>
   
 </body>
